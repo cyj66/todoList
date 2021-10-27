@@ -21,6 +21,7 @@ function deleteTodo(id: number): void {
   const todoList = store.state.todoList.filter((item) => item.id !== id);
   store.commit(DELETE_TODO, todoList);
   setLocalList(store.state.todoList);
+  console.log(66)
 }
 
 function setTodoList(): void {
@@ -63,7 +64,7 @@ function setLocalList(todoList: ITodo[]): void {
   localStorage.setItem("todoList", JSON.stringify(todoList));
 }
 
-function setElementStyle() {
+function setElementStyle(): void {
   store.dispatch(SET_ELEMENT_STYLE);
 }
 
