@@ -21,7 +21,7 @@ function deleteTodo(id: number): void {
   const todoList = store.state.todoList.filter((item) => item.id !== id);
   store.commit(DELETE_TODO, todoList);
   setLocalList(store.state.todoList);
-  console.log(66)
+  console.log(6677)
 }
 
 function setTodoList(): void {
