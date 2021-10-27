@@ -1,0 +1,7 @@
+@function black($n) {
+  @return rgba(0, 0, 0, $n);
+}
+
+@function white($n) {
+  @return rgba(1, 1, 1, $n);
+}

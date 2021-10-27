@@ -1,0 +1,12 @@
+@mixin fontFamily($fontFamily: PingFangSC-regular) {
+  font-family: $fontFamily, -apple-system, sans-serif;
+}
+
+@mixin displayFlex(){
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  position:relative
+}
